@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("BCHAIN-MKPRU.csv")
 #print(df)
 df = df[ df['Value'] > 0 ]
-#df= df.iloc[::-1]
+df= df.iloc[::-1]
 dates = pd.to_datetime(df['Date'])
 
 
