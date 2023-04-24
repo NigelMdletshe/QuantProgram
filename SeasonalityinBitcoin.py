@@ -17,5 +17,10 @@ df["Value"]*=100
 z_vals = [list(df["Value"])[i: i+12] for i in range(0,len(df),12)]
 
 z_vals = [trp(x,12) for x in z_vals]
-print(z_vals)
+
+
+months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Sep','Oct','Nov','Dec']
+years = [str(x) for x in range(2009,2021)]
+
+
 
