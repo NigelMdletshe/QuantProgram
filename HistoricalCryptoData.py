@@ -11,4 +11,7 @@ parameters = {
 }
 req = requests.get(f"https://www.bitstamp.net/api/v2/ohlc/{pair}",
                 params= parameters )
+
+
+req = req.json()
 print(req)
