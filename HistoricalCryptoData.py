@@ -4,6 +4,9 @@ import requests
 import pandas as pd
 import datetime
 
+start = "2021-11-01"
+end = "2021-11-01"
+
 pair ="btcusd"
 parameters = {
     "step":60,
