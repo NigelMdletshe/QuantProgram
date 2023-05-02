@@ -5,6 +5,7 @@
 #5 Trade analysis/Wrapup
 #Get Data from Bistamp.
 
+#1 Data Scrapping
 import json
 import requests
 import pandas as pd
@@ -48,3 +49,9 @@ df["date"] = pd.to_datetime(df["timestamp"], unit = "s")
 #print(df)
 #print(len(df))
 df.to_csv("data.csv")
+
+#Data Scrapping Ends Here
+# 2 Backtesting
+
+
+
