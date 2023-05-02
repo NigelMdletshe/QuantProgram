@@ -52,6 +52,9 @@ df.to_csv("data.csv")
 
 #Data Scrapping Ends Here
 # 2 Backtesting
+# installed vectorbt
+
+
 
 
 
