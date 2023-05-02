@@ -15,8 +15,9 @@ start = "2021-11-01"
 end = "2021-11-10"
 
 dates = pd.date_range(start, end, freq = "1H")
-dates =[int(x.value/(10**9)) for x in list(dates)]
 print(dates)
+dates =[int(x.value/(10**9)) for x in list(dates)]
+#print(dates)
 
 pair ="btcusd"
 url = f"https://www.bitstamp.net/api/v2/ohlc/{pair}"
@@ -44,6 +45,6 @@ df = df[ df["timestamp"] >= dates[0]]
 df = df[ df["timestamp"] < dates[-1]]
 
 df["date"] = pd.to_datetime(df["timestamp"], unit = "s")
-print(df)
-print(len(df))
+#print(df)
+#print(len(df))
 df.to_csv("data.csv")
