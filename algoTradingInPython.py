@@ -14,7 +14,7 @@ import datetime
 start = "2021-11-01"
 end = "2021-11-10"
 
-dates = pd.date_range(start, end, freq = "12H")
+dates = pd.date_range(start, end, freq = "1H")
 dates =[int(x.value/(10**9)) for x in list(dates)]
 print(dates)
 
