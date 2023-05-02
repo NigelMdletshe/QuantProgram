@@ -10,18 +10,18 @@ import requests
 import pandas as pd
 import datetime
 
-
-start = "2021-11-01"
-end = "2021-11-10"
+start = "2016-01-01"
+end = "2023-03-05"
 
 dates = pd.date_range(start, end, freq = "1H")
 print(dates)
 dates =[int(x.value/(10**9)) for x in list(dates)]
-#print(dates)
+print(dates)
 
 pair ="btcusd"
 url = f"https://www.bitstamp.net/api/v2/ohlc/{pair}"
 data = []
+
 for first, last in zip (dates, dates[1:]):
 
     parameters = {
