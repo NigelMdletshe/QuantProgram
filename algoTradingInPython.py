@@ -10,8 +10,11 @@ import json
 import requests
 import pandas as pd
 import datetime
+# Backtesting
+import numpy  as np
+import vectorbt as vbt
 
-start = "2016-01-01"
+start = "2023-01-01"
 end = "2023-03-05"
 
 dates = pd.date_range(start, end, freq = "1H")
@@ -49,11 +52,12 @@ df["date"] = pd.to_datetime(df["timestamp"], unit = "s")
 #print(df)
 #print(len(df))
 df.to_csv("data.csv")
-
+#check your data
+# You must clean your data
 #Data Scrapping Ends Here
 # 2 Backtesting
 # installed vectorbt
-
+ # vectorbt did not install because of network ended on 30min
 
 
 
